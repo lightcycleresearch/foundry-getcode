@@ -1,0 +1,545 @@
+{
+  "_format": "ethers-rs-sol-cache-2",
+  "files": {
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1645067351564,
+      "contentHash": "5d45a46528eaf8a26f0a8d93669f3148",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.23",
+      "artifacts": {
+        "DSTest": {
+          "0.8.10+commit.fc410830.Linux.gcc": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/Contract.sol": {
+      "lastModificationDate": 1645067349436,
+      "contentHash": "06f2ae5d0b8d24e78c123c3364d518f8",
+      "sourceName": "src/Contract.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "Contract": {
+          "0.8.10+commit.fc410830.Linux.gcc": "Contract.sol/Contract.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/UniswapV2ERC20.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "4c24d958cf49846da9fd36a99d81f9fc",
+      "sourceName": "src/UniswapV2ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/interfaces/IUniswapV2ERC20.sol",
+        "src/libraries/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2ERC20": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2ERC20.sol/UniswapV2ERC20.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/UniswapV2Factory.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "bbd1d6d8cec14355db9a75d10b0d6802",
+      "sourceName": "src/UniswapV2Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/UniswapV2ERC20.sol",
+        "src/UniswapV2Pair.sol",
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IUniswapV2Callee.sol",
+        "src/interfaces/IUniswapV2ERC20.sol",
+        "src/interfaces/IUniswapV2Factory.sol",
+        "src/interfaces/IUniswapV2Pair.sol",
+        "src/libraries/Math.sol",
+        "src/libraries/SafeMath.sol",
+        "src/libraries/UQ112x112.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2Factory": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Factory.sol/UniswapV2Factory.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/UniswapV2Pair.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "04b129f0ab195c778c2717f368acc162",
+      "sourceName": "src/UniswapV2Pair.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "src/UniswapV2ERC20.sol",
+        "src/interfaces/IERC20.sol",
+        "src/interfaces/IUniswapV2Callee.sol",
+        "src/interfaces/IUniswapV2ERC20.sol",
+        "src/interfaces/IUniswapV2Factory.sol",
+        "src/interfaces/IUniswapV2Pair.sol",
+        "src/libraries/Math.sol",
+        "src/libraries/SafeMath.sol",
+        "src/libraries/UQ112x112.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2Pair": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Pair.sol/UniswapV2Pair.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/interfaces/IERC20.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "src/interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.10+commit.fc410830.Linux.gcc": "IERC20.sol/IERC20.0.8.10.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/interfaces/IUniswapV2Callee.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "30a4aed15b3fa3ce5588118b7cecfa7f",
+      "sourceName": "src/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Callee": {
+          "0.8.10+commit.fc410830.Linux.gcc": "IUniswapV2Callee.sol/IUniswapV2Callee.0.8.10.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/interfaces/IUniswapV2ERC20.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "752c725168e1a5b73a8209897f18c5b9",
+      "sourceName": "src/interfaces/IUniswapV2ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2ERC20": {
+          "0.8.10+commit.fc410830.Linux.gcc": "IUniswapV2ERC20.sol/IUniswapV2ERC20.0.8.10.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "src/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Factory": {
+          "0.8.10+commit.fc410830.Linux.gcc": "IUniswapV2Factory.sol/IUniswapV2Factory.0.8.10.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "src/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Pair": {
+          "0.8.10+commit.fc410830.Linux.gcc": "IUniswapV2Pair.sol/IUniswapV2Pair.0.8.10.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/libraries/Math.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "src/libraries/Math.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "Math": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "Math.sol/Math.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/libraries/SafeMath.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "src/libraries/SafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "SafeMath": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "SafeMath.sol/SafeMath.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "src/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UQ112x112": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UQ112x112.sol/UQ112x112.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/test/Contract.t.sol": {
+      "lastModificationDate": 1645067421832,
+      "contentHash": "2da82a7f39f6875e09be58dabdbf883f",
+      "sourceName": "src/test/Contract.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "src/test/utils/vm.sol"
+      ],
+      "versionRequirement": "=0.8.10",
+      "artifacts": {
+        "ContractTest": {
+          "0.8.10+commit.fc410830.Linux.gcc": "Contract.t.sol/ContractTest.json"
+        },
+        "IUniswapV2Factory": {
+          "0.8.10+commit.fc410830.Linux.gcc": "Contract.t.sol/IUniswapV2Factory.json"
+        }
+      }
+    },
+    "/home/ubuntu/Projects/lightcycleresearch/foundry-getcode/try-v1/src/test/utils/vm.sol": {
+      "lastModificationDate": 1645067379796,
+      "contentHash": "e2433303100b4e4b9de39ccb9a1a55d8",
+      "sourceName": "src/test/utils/vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "Vm": {
+          "0.8.10+commit.fc410830.Linux.gcc": "vm.sol/Vm.json"
+        }
+      }
+    }
+  }
+}
