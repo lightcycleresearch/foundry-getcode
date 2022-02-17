@@ -25,7 +25,7 @@ contract ContractTest is DSTest {
     function setUp() public {
         Vm vm = Vm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
         address fee = 0xfEE0000000000000000000000000000000000000;
-        bytes memory args = abi.encodePacked(fee);
+        bytes memory args = abi.encode(fee);
         // bytes memory bytecode = abi.encodePacked(vm.getCode("UniswapV2Factory.sol:UniswapV2Factory.json"), args);
         // bytes memory bytecode = abi.encodePacked(vm.getCode("UniswapV2Factory"), args);
         // bytes memory bytecode = abi.encodePacked(vm.getCode("../uniswap-v2-core/out/UniswapV2Factory.sol/UniswapV2Factory.json"), args);
